@@ -8,9 +8,9 @@
  c.id = the id of the cosmetic entity (aec, ridden by armor stand), the ce automatically gets the same id assigned the player that spawned it   had too
  c.cosmetics = can be used for everything that doesnt require to be assigned to specific entities (ex. countdowns) and can use fakeplayers
  currently only used by %rotation
- ## Entities
+ ### Entities
  The pack currently only uses 2 entites, an aec with the tag "c.cosmeticentity" and an armorstand with the "c.cosmeticarmorstand" tag
- ## Player Tags 
+ ### Player Tags 
  There are multiple tags for players and you might have to add your own when adding new cosmetics
  c.requires.ce = given to players that require an cosmetic entity, used to detect if the player already has an assigned cosmetic entity when    equipping a new cosmetic
  c.has.cosmetic = must be given to all players that have an cosmetic equipped
