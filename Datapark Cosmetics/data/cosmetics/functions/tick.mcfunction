@@ -14,4 +14,4 @@ execute if score %rotation c.cosmetics matches 360.. run scoreboard players set 
 # /!\ END  /!\
 
 #kills the cosmetic armorstand if there is no cosmetic entity within 2 blocks
-#execute as @e[type=armor_stand,tag=c.cosmeticarmorstand] at @s unless entity @e[type=area_effect_cloud,tag=c.cosmeticentity,distance=..2] run kill @s
+#execute as @e[type=armor_stand,tag=c.cosmeticarmorstand] at @s unless entity @e[type=area_effect_cloud,tag=c.cosmeticentity,distance=..25] run kill @s
