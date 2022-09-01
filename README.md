@@ -2,6 +2,7 @@
 Explanation:
   
    --- SCOREBOARDS ---
+  
  There currently are 3 scoreboards which 1 of will probably be used for other stuff too but i will still explain them:
  player.id = the id of the player, players get an unique id assigned as soon as they join the world!
  c.id = the id of the cosmetic entity (aec, ridden by armor stand), the ce automatically gets the same id assigned the player that spawned it   had too
