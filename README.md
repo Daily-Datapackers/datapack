@@ -49,7 +49,7 @@ And lastly "main.mcfunction"
 You can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armorstand if you have one
   
   
-For cosmetics that don’t require an entity:
+### For cosmetics that don’t require an entity:
 It should work the same for everything that is in the folder, don’t paste the things marked to not to put there in there tho
 
 The only other thing you need to do is adding this to "tick.mcfunction"
