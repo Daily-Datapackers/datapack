@@ -1,4 +1,4 @@
-#⚠️ DON'T MODIFY UNMARKED PARTS OF THIS FILE OR YOU MIGHT BREAK STUFF ⚠️ 
+# ⚠️ DON'T MODIFY UNMARKED PARTS OF THIS FILE OR YOU MIGHT BREAK STUFF ⚠️ 
 # Runs the link function
 execute as @e[type=area_effect_cloud,tag=c.cosmeticentity] run function cosmetics:link
 
