@@ -28,30 +28,35 @@ In "tick.mcfunction" add
 execute as @e[type=armor_stand,tag=c.<c.cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
 ```
 In "actually_link.mcfunction" add 
-```
+```mcfunction
 execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add c.<c.cosmetic_name>
 ```
 Make a new folder and give it the name of you cosmetic
 In that folder add
   
 "unequip.mcfunction":
-  tag @s remove c.requires_ce <- only add this if your cosmetic requires and cosmetic entity
-  tag @s remove c.<cosmetic_name>
-  tag @s remove c.has_cosmetic
-
+```mcfunction
+tag @s remove c.requires_ce <- only add this if your cosmetic requires and cosmetic entity
+tag @s remove c.<cosmetic_name>
+tag @s remove c.has_cosmetic
+```
+      
 And "equip.mcfunction":
-  execute unless entity @s[tag=c.requires.ce] run function cosmetics:summon_ce <- only add this if your cosmetic requires and cosmetic entit
-  tag @s add c.requires_ce <- only add this if your cosmetic requires and cosmetic entit
-  tag @s add c.<cosmetic_name>
-  tag @s add c.has_cosmetic
+```mcfunction
+execute unless entity @s[tag=c.requires.ce] run function cosmetics:summon_ce <- only add this if your cosmetic requires and cosmetic entit
+tag @s add c.requires_ce <- only add this if your cosmetic requires and cosmetic entit
+tag @s add c.<cosmetic_name>
+tag @s add c.has_cosmetic
+```
 
 And lastly "main.mcfunction"
 You can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armorstand if you have one
-  
   
   
 For cosmetics that don’t require an entity:
 It should work the same for everything that is in the folder, don’t paste the things marked to not to put there in there tho
 
 The only other thing you need to do is adding this to "tick.mcfunction"
+```mcfunction
 execute as @a[tag=c.<cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
+````
