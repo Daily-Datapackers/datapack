@@ -1,5 +1,6 @@
 <Unnamed Project> Cosmetics
-      --- EXPLANATION ---
+      
+   --- EXPLANATION ---
   
    --- SCOREBOARDS ---
   
@@ -23,11 +24,13 @@
 For Cosmetics that require an entity:
   
 In "tick.mcfunction" add 
+```
 execute as @e[type=armor_stand,tag=c.<c.cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
-  
+```
 In "actually_link.mcfunction" add 
-  execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add c.<c.cosmetic_name>
-
+```
+execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add c.<c.cosmetic_name>
+```
 Make a new folder and give it the name of you cosmetic
 In that folder add
   
