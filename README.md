@@ -1,5 +1,5 @@
 <Unnamed Project> Cosmetics
-Explanation:
+      --- EXPLANATION ---
   
    --- SCOREBOARDS ---
   
