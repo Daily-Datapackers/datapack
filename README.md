@@ -1,27 +1,24 @@
-<Unnamed Project> Cosmetics
+# <Unnamed Project> Cosmetics
       
-   --- EXPLANATION ---
+##  EXPLANATION
   
-   --- SCOREBOARDS ---
+##  SCOREBOARDS
   
  There currently are 3 scoreboards which 1 of will probably be used for other stuff too but i will still explain them:
  player.id = the id of the player, players get an unique id assigned as soon as they join the world!
  c.id = the id of the cosmetic entity (aec, ridden by armor stand), the ce automatically gets the same id assigned the player that spawned it   had too
  c.cosmetics = can be used for everything that doesnt require to be assigned to specific entities (ex. countdowns) and can use fakeplayers
  currently only used by %rotation
-    --- Entities ---
+ ## Entities
  The pack currently only uses 2 entites, an aec with the tag "c.cosmeticentity" and an armorstand with the "c.cosmeticarmorstand" tag
-    --- Player Tags ---
+ ## Player Tags 
  There are multiple tags for players and you might have to add your own when adding new cosmetics
  c.requires.ce = given to players that require an cosmetic entity, used to detect if the player already has an assigned cosmetic entity when    equipping a new cosmetic
  c.has.cosmetic = must be given to all players that have an cosmetic equipped
  c.<cosmetic_name> = replace <cosmetic_name> with the name of your cosmetic, used to detect which cosmetic is currently equipped
-
-
-
-      --- ADDING NEW COSMETICS ---
-  
-For Cosmetics that require an entity:
+ 
+## ADDING NEW COSMETICS
+### For Cosmetics that require an entity:
   
 In "tick.mcfunction" add 
 ```mcfunction
