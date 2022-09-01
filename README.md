@@ -29,15 +29,18 @@ execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.co
 ```
 Make a new folder and give it the name of you cosmetic
 In that folder add
+  "unequip.mcfunction"
+  "equip.mcfunction"
+  and "main.mcfunction"
   
-"unequip.mcfunction":
+In "unequip.mcfunction" put:
 ```mcfunction
 tag @s remove c.requires_ce <- only add this if your cosmetic requires and cosmetic entity
 tag @s remove c.<cosmetic_name>
 tag @s remove c.has_cosmetic
 ```
       
-And "equip.mcfunction":
+In "equip.mcfunction" put:
 ```mcfunction
 execute unless entity @s[tag=c.requires.ce] run function cosmetics:summon_ce <- only add this if your cosmetic requires and cosmetic entit
 tag @s add c.requires_ce <- only add this if your cosmetic requires and cosmetic entit
@@ -45,7 +48,7 @@ tag @s add c.<cosmetic_name>
 tag @s add c.has_cosmetic
 ```
 
-And lastly "main.mcfunction"
+In "main.mcfunction" put:
 You can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armorstand if you have one
   
   
