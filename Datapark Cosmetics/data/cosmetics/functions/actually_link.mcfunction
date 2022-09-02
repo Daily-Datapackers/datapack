@@ -1,5 +1,6 @@
 # ⚠️ DON'T MODIFY UNMARKED PARTS OF THIS FILE OR YOU MIGHT BREAK STUFF ⚠️
-
+#Does something
+scoreboard players set %kill c.id 0
 # TPs the cosmetic entity to players with the same id
 tp @e[type=area_effect_cloud,tag=c.cosmeticentity,tag=selected,limit=1] ~ ~ ~
 # Air toggling > needed for less "lagback" when tping
