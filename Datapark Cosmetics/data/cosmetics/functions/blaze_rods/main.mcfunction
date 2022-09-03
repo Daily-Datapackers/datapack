@@ -1,5 +1,5 @@
 # Replaces the head item
-item replace entity @s armor.head with iron_nugget{CustomModelData:1725}
+execute if entity @s[tag=!custom_model] run function cosmetics:blaze_rods/add_custom_model
 # Displays particles
 particle flame ~ ~0.5 ~ 0.5 0.4 0.5 0 1 normal
 particle smoke ~ ~0.5 ~ 0.5 0.5 0.5 0 1 normal 

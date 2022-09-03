@@ -13,5 +13,3 @@ execute if score %rotation c.cosmetics matches ..360 run scoreboard players add 
 execute if score %rotation c.cosmetics matches 360.. run scoreboard players set %rotation c.cosmetics 1
 # -- END --
 
-#runs cosmetic:rejoin function if a player rejoins
-execute as @a at @s run function cosmetics:rejoin

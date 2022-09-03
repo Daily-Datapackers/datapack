@@ -6,6 +6,6 @@ scoreboard objectives add player.id dummy
 scoreboard objectives add c.id dummy
 # Used to store stuff that doesn't need to be stored individually in entities in %fakeplayers
 scoreboard objectives add c.cosmetics dummy
+scoreboard players add %rotation c.cosmetics 0
 #used to detect when somebody joins
 scoreboard objectives add hub.rejoin minecraft.custom:leave_game 
-scoreboard players add %rotation c.cosmetics 0
