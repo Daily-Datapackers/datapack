@@ -51,7 +51,7 @@ tag @s add c.has_cosmetic
  
 In "main.mcfunction" put:
 ```mcfunction
-execute if entity @s[tag=!custom_model] run function cosmetics:<cosmetic_name>/add_custom_model <- only add this if your cosmetic requires a cosmetic entit
+execute if entity @s[tag=!c.custom_model] run function cosmetics:<cosmetic_name>/add_custom_model <- only add this if your cosmetic requires a cosmetic entit
 ```
 Aside from that you can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armorstand if you have one
  
