@@ -58,7 +58,7 @@ Aside from that you can put pretty much whatever you want here but keep in mind 
 In "add_custom_model.mcfunction" put: <- only add this function if your cosmetic requires a cosmetic entit
 ```mcfunction
 item replace entity @s armor.head with jigsaw{CustomModelData:1000} <- before you use any number make sure that it isn't used in this file: https://github.com/Daily-Datapackers/resources/blob/main/resourcepack/assets/minecraft/models/item/jigsaw.json
-tag @s add custom_model
+tag @s add c.custom_model
 ```
  
 ### For cosmetics that don’t require an entity:
