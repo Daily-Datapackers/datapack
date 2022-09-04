@@ -12,3 +12,5 @@ scoreboard players add %rotation c.cosmetics 0
 
 # Used to detect when somebody joins
 scoreboard objectives add hub.rejoin minecraft.custom:leave_game 
+#summons rotating marker
+execute unless entity @e[type=marker,tag=c.rotate] run summon marker ~ ~ ~ {Tags:["c.rotate"]}
