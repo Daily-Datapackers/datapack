@@ -7,9 +7,11 @@ execute as @e[type=area_effect_cloud,tag=c.cosmeticentity] run function cosmetic
 execute as @e[type=armor_stand,tag=c.blaze_rods] at @s run function cosmetics:blaze_rods/main
 
 ## ⚠️ Put your uses of c.cosmetics here  ⚠️ 
+
 # Adds score to %rotations c.cosmetics score
 execute if score %rotation c.cosmetics matches ..360 run scoreboard players add %rotation c.cosmetics 10
+
 # Resets %rotations c.cosmetics score
 execute if score %rotation c.cosmetics matches 360.. run scoreboard players set %rotation c.cosmetics 1
-# -- END --
 
+# -- END --
