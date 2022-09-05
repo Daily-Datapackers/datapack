@@ -23,7 +23,7 @@
  
 ___
  
-## ADDING NEW COSMETICS
+## ADDING NEW COSMETICS (ONLY IN COSMETICS FOLDER)
 ### For Cosmetics that require an entity:
  
 In "tick.mcfunction" add
@@ -32,7 +32,7 @@ execute as @e[type=armor_stand,tag=c.<c.cosmetic_name>] at @s run function cosme
 ```
 In "actually_link.mcfunction" add
 ```mcfunction
-execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add c.<c.cosmetic_name>
+execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add <c.cosmetic_name>
 ```
 Make a new folder and give it the name of your cosmetic
 In that folder add:
@@ -65,6 +65,7 @@ In "main.mcfunction" put:
 execute if entity @s[tag=!c.custom_model] run function cosmetics:<cosmetic_name>/add_custom_model
 ```
 Aside from that you can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armor stand
+
 In "add_custom_model.mcfunction" put: 
 ```mcfunction
 item replace entity @s armor.head with jigsaw{CustomModelData:1000}
@@ -74,9 +75,9 @@ tag @s add c.custom_model
  
 ### For cosmetics that don’t require an entity:
 
-In "tick.mcfunction" add
+In "particle_cosmetics.mcfunction" add
 ```mcfunction
-execute as @a[tag=c.<c.cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
+execute if @s[tag=c.<c.cosmetic_name>] run function cosmetic:<cosmetic_name>/main
 ```
 
 Make a new folder and give it the name of your cosmetic
@@ -90,15 +91,17 @@ In that folder add:
  
  In "unequip.mcfunction" put:
 ```mcfunction
-tag @s remove c.<cosmetic_name>
 tag @s remove c.has_cosmetic
+tag @s remove c.particle_cosmetic
+tag @s remove c.<cosmetic_name>
 ```
 
 In "equip.mcfunction" put:
 ```mcfunction
 execute if entity @s[tag=c.has_cosmetic] run tellraw @s {"text":"You already have a cosmetic equipped!","color":"red"}
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
 execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
+execute unless entity @s[tag=c.particle_cosmetic] run tag @s add c.particle_cosmetic
+execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
 ```
 
 Put your particle commands in "main.mcfunction", these will be run AS and AT the player.
