@@ -77,6 +77,7 @@ tag @s add c.custom_model
 In "tick.mcfunction" add
 ```mcfunction
 execute as @a[tag=c.<c.cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
+```
 
 Make a new folder and give it the name of your cosmetic
 In that folder add:
