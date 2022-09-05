@@ -35,37 +35,37 @@ In "actually_link.mcfunction" add
 execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add c.<c.cosmetic_name>
 ```
 Make a new folder and give it the name of your cosmetic
-In that folder add
+In that folder add:
   `unequip.mcfunction`,
  
   `equip.mcfunction`,
  
   `main.mcfunction`,
  
-  and `add_custom_model.mcfunction`
+  `add_custom_model.mcfunction`
  
 In "unequip.mcfunction" put:
 ```mcfunction
-tag @s remove c.requires_ce <- only add this if your cosmetic requires a cosmetic entity
+tag @s remove c.requires_ce 
 tag @s remove c.<cosmetic_name>
 tag @s remove c.has_cosmetic
 ```
      
 In "equip.mcfunction" put:
 ```mcfunction
-execute unless entity @s[tag=c.requires.ce] run function cosmetics:summon_ce <- only add this if your cosmetic requires a cosmetic entity
-tag @s add c.requires_ce <- only add this if your cosmetic requires a cosmetic entity
-tag @s add c.<cosmetic_name>
-tag @s add c.has_cosmetic
+execute if entity @s[tag=c.has_cosmetic] run tellraw @s {"text":"You already have a cosmetic equipped!","color":"red"}
+execute unless entity @s[tag=c.requires.ce] run function cosmetics:summon_ce
+execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.requires_ce
+execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
+execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
 ```
  
 In "main.mcfunction" put:
 ```mcfunction
-execute if entity @s[tag=!c.custom_model] run function cosmetics:<cosmetic_name>/add_custom_model <- only add this if your cosmetic requires a cosmetic entit
+execute if entity @s[tag=!c.custom_model] run function cosmetics:<cosmetic_name>/add_custom_model
 ```
-Aside from that you can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armor stand if you have one
- 
-In "add_custom_model.mcfunction" put: <- only add this function if your cosmetic requires a cosmetic entity
+Aside from that you can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armor stand
+In "add_custom_model.mcfunction" put: 
 ```mcfunction
 item replace entity @s armor.head with jigsaw{CustomModelData:1000}
 # before you use any number make sure that it isn't used in this file: https://github.com/Daily-Datapackers/resources/blob/main/resourcepack/assets/minecraft/models/item/jigsaw.json
@@ -73,10 +73,36 @@ tag @s add c.custom_model
 ```
  
 ### For cosmetics that don’t require an entity:
-It should work the same for everything that is in the folder, don’t paste the things marked not to put there in there tho
- 
-The only other thing you need to do is add this to "tick.mcfunction"
+
+In "tick.mcfunction" add
 ```mcfunction
-execute as @a[tag=c.<cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
+execute as @a[tag=c.<c.cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
+
+Make a new folder and give it the name of your cosmetic
+In that folder add:
+
+  `unequip.mcfunction`,
+ 
+  `equip.mcfunction`,
+ 
+  `main.mcfunction`
+ 
+ In "unequip.mcfunction" put:
+```mcfunction
+tag @s remove c.<cosmetic_name>
+tag @s remove c.has_cosmetic
 ```
+
+In "equip.mcfunction" put:
+```mcfunction
+execute if entity @s[tag=c.has_cosmetic] run tellraw @s {"text":"You already have a cosmetic equipped!","color":"red"}
+execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
+execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
+```
+
+Put your particle commands in "main.mcfunction", these will be run AS and AT the player.
+If you want your particles to rotate execute them `rotated as @e[type=marker,tag=c.rotator]`!
+
+
+
 
