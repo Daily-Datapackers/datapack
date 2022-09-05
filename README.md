@@ -32,7 +32,7 @@ execute as @e[type=armor_stand,tag=c.<c.cosmetic_name>] at @s run function cosme
 ```
 In "actually_link.mcfunction" add
 ```mcfunction
-execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add c.<c.cosmetic_name>
+execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add <c.cosmetic_name>
 ```
 Make a new folder and give it the name of your cosmetic
 In that folder add:
