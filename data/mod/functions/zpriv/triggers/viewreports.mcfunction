@@ -1,0 +1,5 @@
+execute if data storage mod:reports Reports[0] run tellraw @s ["",{"text":"-- ","bold":true,"color":"gold"},{"text":"Recent Report","bold":true,"color":"aqua"},{"text":" --","bold":true,"color":"gold"},{"text":"\n"},{"text":"Reporter: ","color":"gold"},{"text":"Username","color":"yellow"},{"text":"\n"},{"text":"Report Against: ","color":"gold"},{"text":"Username2","color":"yellow"},{"text":"\n"},{"text":"Reason: ","color":"gold"},{"text":"Reason","color":"yellow"},{"text":"\n"},{"text":"[DELETE]","color":"red","clickEvent":{"action":"run_command","value":"/trigger mod.zmod set 502"}},{"text":" "},{"text":"[TP]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger mod.zmod set 123"}},{"text":"\n"},{"text":"-- Recent Report --","bold":true,"color":"gold"}]
+
+execute unless data storage mod:reports Reports[0] run tellraw @s {"text": "The kingdom have been loyal recently, there are no reports :D","color": "yellow"}
+
+tellraw @a[tag=mod.cmd.ban] ["",{"text":"[","italic":true,"color":"gray"},{"selector":"@s","italic":true,"color":"yellow"},{"text":" ran /trigger mod.viewreports]","italic":true,"color":"gray"}]

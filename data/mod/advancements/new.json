@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "new": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "rewards": {
+      "function": "mod:zpriv/setup"
+    }
+  }
+  

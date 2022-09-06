@@ -1,0 +1,2 @@
+
+function cosmetics:tick
