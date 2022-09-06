@@ -75,7 +75,7 @@ execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
  
 In "main.mcfunction" put:
 ```mcfunction
-execute if entity @s[tag=!c.custom_model] run function cosmetics:<cosmetic_name>/add_custom_model
+execute unless entity @s[tag=c.custom_model] run function cosmetics:<cosmetic_name>/add_custom_model
 ```
 Aside from that you can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armor stand
 
