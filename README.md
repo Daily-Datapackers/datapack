@@ -68,8 +68,8 @@ In "equip.mcfunction" put:
 ```mcfunction
 execute if entity @s[tag=c.has_cosmetic] run tellraw @s {"text":"You already have a cosmetic equipped!","color":"red"}
 execute unless entity @s[tag=c.requires_ce] run function cosmetics:summon_ce
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.requires_ce
 execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
+execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.requires_ce
 execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
 ```
  
