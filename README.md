@@ -121,5 +121,10 @@ Put your particle commands in "main.mcfunction", these will be run AS and AT the
 If you want your particles to rotate execute them `rotated as @e[type=marker,tag=c.rotator]`!
 
 
+## Minigames
+Only execute functions with an underscore at the beginning.
+
+`Whack a Frog`: You can build the mashine using the command "function minigames:whack_a_frog/_build_mashine" and remove the nearest one with "function minigames:whack_a_frog/_remove_nearest_mashine"
+
 
 
