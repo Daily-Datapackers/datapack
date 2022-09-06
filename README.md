@@ -5,7 +5,7 @@
 ###  CodeLib
   In the folder "main" ther is a subfolder called "codelib". In this folder you can put functions that can be used multiple times like "rng.mcfunction" (a random number generator). If you create a new one please put an explanation of how to use it in this list.
 
- `get_facing_dir.mcfunction` reads the executers rotation and outputs the cardinal direction it's facing the closets as a number in the scoreboard `dir``temp`
+ `get_facing_dir.mcfunction` reads the executers rotation and outputs the cardinal direction it's facing the closets as a number in the scoreboard `dir` `temp`
 
  `rng.mcfunction` generates a random number from a given range (only positive numbers). To set the range you have to set the fake players `max` and `min` in the scoreboard `temp` to the numbers you need
 
