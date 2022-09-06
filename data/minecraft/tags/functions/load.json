@@ -1,3 +1,7 @@
 {
-    "values":["cosmetics:load"] 
+    "values":[
+        "main:load",
+        "minigames:load",
+        "cosmetics:load"
+    ] 
 }
