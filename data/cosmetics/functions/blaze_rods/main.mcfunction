@@ -1,5 +1,5 @@
 # Replaces the head item
-execute if entity @s[tag=!c.custom_model] run function cosmetics:blaze_rods/add_custom_model
+function cosmetics:blaze_rods/add_custom_model
 # Displays particles
 particle flame ~ ~0.5 ~ 0.5 0.4 0.5 0 1 normal
 particle smoke ~ ~0.5 ~ 0.5 0.5 0.5 0 1 normal 
