@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager",
+                    "nbt": "{Tags:[\"whack_a_frog\",\"start_button\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minigames:whack_a_frog/mechanics/start"
+    }
+}

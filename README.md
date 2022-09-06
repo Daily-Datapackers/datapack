@@ -1,17 +1,30 @@
-# `<Unnamed Project>` Cosmetics
+# `Datapark Datapack`
      
 ##  EXPLANATION
- 
+
+###  CodeLib
+  In the folder "main" ther is a subfolder called "codelib". In this folder you can put functions that can be used multiple times like "rng.mcfunction" (a random number generator). If you create a new one please put an explanation of how to use it in this list.
+
+ `get_facing_dir.mcfunction` reads the executers rotation and outputs the cardinal direction it's facing the closets as a number in the scoreboard `dir` `temp`
+
+ `rng.mcfunction` generates a random number from a given range (only positive numbers). To set the range you have to set the fake players `max` and `min` in the scoreboard `temp` to the numbers you need
+
 ###  Scoreboards
- There currently are 3 scoreboards, 1 of which will probably be used for other stuff too but I will still explain them:
+ There are currently 6 freely usable scoreboards:
  
  `player.id` is the id of the _player_, players get a unique id assigned as soon as they join the world!
  
+ `temp` is a temporary storage for scores. Temporary means that the scores will be used in the same function or tick at least. If you need to store the score longer than that you should use another unique scoreboard
+
+ `timer<number>` is a timer if you need a timer more just add one in "main:load.mcfunction". Please keep the timer name format the same: the word timer with a number directly attached
+
  `c.id` is the id of the _cosmetic entity_ (aec, ridden by armor stand), the ce automatically gets the same id assigned the player that spawned it had too
  
  `c.cosmetics` can be used for everything that doesn't require to be assigned to specific entities (ex. countdowns) and can use `fakeplayers`, currently only used by `%rotation`
+ 
  ### Entities
  The pack currently only uses 2 entities, an aec with the tag `"c.cosmeticentity"` and an armor stand with the `"c.cosmeticarmorstand"` tag
+
  ### Player Tags
  There are multiple tags for players and you might have to add your own when adding new cosmetics
  
@@ -107,6 +120,11 @@ execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
 Put your particle commands in "main.mcfunction", these will be run AS and AT the player.
 If you want your particles to rotate execute them `rotated as @e[type=marker,tag=c.rotator]`!
 
+
+## Minigames
+Only execute functions with an underscore at the beginning.
+
+`Whack a Frog`: You can build the mashine using the command "function minigames:whack_a_frog/_build_mashine" and remove the nearest one with "function minigames:whack_a_frog/_remove_nearest_mashine"
 
 
 
