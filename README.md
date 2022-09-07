@@ -16,7 +16,7 @@
  
  `temp` is a temporary storage for scores. Temporary means that the scores will be used in the same function or tick at least. If you need to store the score longer than that you should use another unique scoreboard
 
- `timer<number>` is a timer if you need a timer more just add one in "main:load.mcfunction". Please keep the timer name format the same: the word timer with a number directly attached
+ `timer<number>` is a timer, If you need a timer more just add one in "main:load.mcfunction". Please keep the timer name format the same: the word timer with a number directly attached
 
  `c.id` is the id of the _cosmetic entity_ (aec, ridden by armor stand), the ce automatically gets the same id assigned the player that spawned it had too
  
