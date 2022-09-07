@@ -1,3 +1,3 @@
 
 function cosmetics:tick
-say this is a test
+say this is another test
