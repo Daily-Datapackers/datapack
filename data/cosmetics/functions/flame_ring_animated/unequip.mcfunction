@@ -1,3 +1,3 @@
-tag @s remove c.has_cosmetic
-tag @s remove c.particle_cosmetic
-tag @s remove c.flame_ring_animated
+tellraw @s {"text":"Succesfully unequipped cosmetic \"Flame Ring (Animated)\"!","color":"green"}
+
+scoreboard players set @s c.equipped_cosmetic 0

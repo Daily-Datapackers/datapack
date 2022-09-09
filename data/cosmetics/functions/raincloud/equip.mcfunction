@@ -1,4 +1,5 @@
-execute if entity @s[tag=c.has_cosmetic] run tellraw @s {"text":"You already have a cosmetic equipped!","color":"red"}
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.raincloud
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.particle_cosmetic
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
+execute if entity @s[scores={c.equipped_cosmetic=0}] run tellraw @s {"text":"Equipped \"Raincloud\" cosmetic!","color":"green"}
+execute if entity @s[scores={c.equipped_cosmetic=1..}] run tellraw @s {"text":"Changed cosmetic to \"Raincloud\"!","color":"green"}
+scoreboard players set @s c.equipped_cosmetic 1
+execute at @s run kill @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1,sort=nearest,distance=..0.5]
+execute at @s run kill @e[type=area_effect_cloud,tag=c.cosmeticentity,limit=1,sort=nearest,distance=..0.5]

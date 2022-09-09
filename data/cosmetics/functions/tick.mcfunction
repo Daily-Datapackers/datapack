@@ -3,11 +3,11 @@
 execute as @e[type=area_effect_cloud,tag=c.cosmeticentity] run function cosmetics:link
 
 # Runs the main function of the equiped particles cosmetic
-execute as @a[tag=c.particle_cosmetic] at @s run function cosmetics:particle_cosmetics
+execute as @a[scores={c.equipped_cosmetic=1..10000}] at @s run function cosmetics:particle_cosmetics
 
 # Runs the main function of the cosmetic as and at the cosmetic armorstand 
 # ⚠️ Copy this and replace <c.blaze_rods> with the tag of your cosmetic and the function at the end with your function  ⚠️
-execute as @e[type=armor_stand,tag=c.blaze_rods] at @s run function cosmetics:blaze_rods/main
+execute as @e[type=armor_stand,tag=c.cosmeticarmorstand,scores={c.equipped_cosmetic=10001}] at @s run function cosmetics:blaze_rods/main
 
 ## ⚠️ Put your uses of c.cosmetics here  ⚠️ 
 

@@ -1,3 +1,3 @@
-tag @s remove c.has_cosmetic
-tag @s remove c.particle_cosmetic
-tag @s remove c.raincloud
+tellraw @s {"text":"Succesfully unequipped cosmetic \"Raincloud\"!","color":"green"}
+
+scoreboard players set @s c.equipped_cosmetic 0

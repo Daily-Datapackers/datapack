@@ -6,7 +6,7 @@ tag @s add selected
 # Sets %compare's c.id score to the same as the cosmetic entites c.id score
 scoreboard players operation %compare c.id = @s c.id
 
-#Sets %kills c.id score to 1 (what else did you expect ;-;)
+#Sets %kill's c.id score to 1 (what else did you expect ;-;)
 scoreboard players set %kill c.id 1 
 
 # Checks as all players if the player id of @s matches %compare's c.id and runs the cosmetic:actually_link function if yes
