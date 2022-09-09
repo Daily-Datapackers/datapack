@@ -17,7 +17,7 @@ execute if score %rotation c.cosmetics matches ..360 run scoreboard players add 
 # Resets %rotations c.cosmetics score
 execute if score %rotation c.cosmetics matches 360.. run scoreboard players set %rotation c.cosmetics 1
 
-# -- END --
-
 # Rotates rotator
 execute as @e[type=marker, tag=c.rotate] at @s run tp @s ~ ~ ~ ~10 ~
+
+# Purely for testing -HoodieRocks
