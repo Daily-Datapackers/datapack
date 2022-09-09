@@ -26,14 +26,7 @@
  The pack currently only uses 2 entities, an aec with the tag `"c.cosmeticentity"` and an armor stand with the `"c.cosmeticarmorstand"` tag
 
  ### Player Tags
- There are multiple tags for players and you might have to add your own when adding new cosmetics
- 
- `c.requires_ce` = given to players that require a cosmetic entity, used to detect if the player already has an assigned cosmetic entity when equipping a new cosmetic
- 
- `c.has.cosmetic` = must be given to all players that have a cosmetic equipped
- 
- `c.<cosmetic_name>` = replace `<cosmetic_name>` with the name of your cosmetic, used to detect which cosmetic is currently equipped
- 
+ There are currently no tags for players but you might have to add your own when adding new stuff
 ___
  
 ## ADDING NEW COSMETICS (ONLY IN COSMETICS FOLDER)
@@ -41,12 +34,9 @@ ___
  
 In "tick.mcfunction" add
 ```mcfunction
-execute as @e[type=armor_stand,tag=c.<c.cosmetic_name>] at @s run function cosmetic:<cosmetic_name>/main
+execute as @e[type=armor_stand,scores={c.equipped_cosmetic=<cosmetic_id>}] at @s run function cosmetic:<cosmetic_name>/main
 ```
-In "actually_link.mcfunction" add
-```mcfunction
-execute if entity @s[tag=c.<cosmetic_name>] run tag @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1] add <c.cosmetic_name>
-```
+
 Make a new folder and give it the name of your cosmetic
 In that folder add:
   `unequip.mcfunction`,
@@ -59,23 +49,24 @@ In that folder add:
  
 In "unequip.mcfunction" put:
 ```mcfunction
-tag @s remove c.requires_ce 
-tag @s remove c.<cosmetic_name>
-tag @s remove c.has_cosmetic
+tellraw @s {"text":"Succesfully unequipped cosmetic \"<Cosmetic Name>\"!","color":"green"}
+scoreboard players set @s c.equipped_cosmetic 0
+execute at @s run kill @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1,sort=nearest,distance=..0.5]
+execute at @s run kill @e[type=area_effect_cloud,tag=c.cosmeticentity,limit=1,sort=nearest,distance=..0.5]
+
 ```
      
 In "equip.mcfunction" put:
 ```mcfunction
-execute if entity @s[tag=c.has_cosmetic] run tellraw @s {"text":"You already have a cosmetic equipped!","color":"red"}
-execute unless entity @s[tag=c.requires_ce] run function cosmetics:summon_ce
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.requires_ce
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
+execute if entity @s[scores={c.equipped_cosmetic=0}] run tellraw @s {"text":"Equipped \"<Cosmetic Name>\" cosmetic!","color":"green"}
+execute if entity @s[scores={c.equipped_cosmetic=1..}] run tellraw @s {"text":"Changed cosmetic to \"<Cosmetic Name>\"!","color":"green"}
+execute unless entity @s[scores={c.equipped_cosmetic=10001..}] run function cosmetics:summon_ce
+scoreboard players set @s c.equipped_cosmetic <cosmetic_id>
 ```
  
 In "main.mcfunction" put:
 ```mcfunction
-execute unless entity @s[tag=c.custom_model] run function cosmetics:<cosmetic_name>/add_custom_model
+function cosmetics:<cosmetic_name>/add_custom_model
 ```
 Aside from that you can put pretty much whatever you want here but keep in mind that all commands in this function are run AS and AT the cosmetic armor stand
 
@@ -104,17 +95,18 @@ In that folder add:
  
  In "unequip.mcfunction" put:
 ```mcfunction
-tag @s remove c.has_cosmetic
-tag @s remove c.particle_cosmetic
-tag @s remove c.<cosmetic_name>
+tellraw @s {"text":"Succesfully unequipped cosmetic \"<Cosmetic Name>\"!","color":"green"}
+
+scoreboard players set @s c.equipped_cosmetic 0
 ```
 
 In "equip.mcfunction" put:
 ```mcfunction
-execute if entity @s[tag=c.has_cosmetic] run tellraw @s {"text":"You already have a cosmetic equipped!","color":"red"}
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.<cosmetic_name>
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.particle_cosmetic
-execute unless entity @s[tag=c.has_cosmetic] run tag @s add c.has_cosmetic
+execute if entity @s[scores={c.equipped_cosmetic=0}] run tellraw @s {"text":"Equipped \"<Cosmeetic Name>\" cosmetic!","color":"green"}
+execute if entity @s[scores={c.equipped_cosmetic=1..}] run tellraw @s {"text":"Changed cosmetic to \"<Cosmeetic Name>\"!","color":"green"}
+scoreboard players set @s c.equipped_cosmetic <cosmetic_id>
+execute at @s run kill @e[type=armor_stand,tag=c.cosmeticarmorstand,limit=1,sort=nearest,distance=..0.5]
+execute at @s run kill @e[type=area_effect_cloud,tag=c.cosmeticentity,limit=1,sort=nearest,distance=..0.5]
 ```
 
 Put your particle commands in "main.mcfunction", these will be run AS and AT the player.
