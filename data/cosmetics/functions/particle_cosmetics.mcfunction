@@ -1,5 +1,5 @@
-#Someone comment this code:
-
+#Detect when you have a particle trail equipped, and then do the particles
+execute if entity @s[scores={c.equipped_cosmetic=1}] positioned ~ ~0.1 ~ rotated as @e[type=marker,tag=c.rotate] run function cosmetics:flame_ring/main
 execute if entity @s[scores={c.equipped_cosmetic=1019}] run function cosmetics:raincloud/main
 execute if entity @s[scores={c.equipped_cosmetic=1022}] run function cosmetics:wet/main
 execute if entity @s[scores={c.equipped_cosmetic=1021}] run function cosmetics:sculk_charge/main
