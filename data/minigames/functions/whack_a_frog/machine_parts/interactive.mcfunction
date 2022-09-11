@@ -14,4 +14,4 @@ summon frog ^.75 ^ ^-.75 {NoAI:1b,Health:1000000f,Variant:"minecraft:temperate",
 summon frog ^-.75 ^ ^.75 {NoAI:1b,Health:1000000f,Variant:"minecraft:temperate",Tags:["whack_a_frog","frog"],Silent:1b,Attributes:[{Name:"minecraft:generic.max_health",Base:1000000}]}
 
 # Gives every frog an id
-execute positioned ~-1 ~ ~-1 as @e[type=frog,tag=whack_a_frog,tag=frog,dx=2,dz=2] unless entity @s[scores={entity_id=1..}] run function minigames:whack_a_frog/mashine_parts/setup_frogs
+execute positioned ~-1 ~ ~-1 as @e[type=frog,tag=whack_a_frog,tag=frog,dx=2,dz=2] unless entity @s[scores={entity_id=1..}] run function minigames:whack_a_frog/machine_parts/setup_frogs
