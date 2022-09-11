@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "join": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "main:join"
+    }
+}
