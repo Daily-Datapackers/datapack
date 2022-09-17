@@ -9,4 +9,4 @@ tp ~ ~ ~ ~ 0
 fill ~-1 ~ ~-1 ~1 ~ ~1 snow[layers=5] replace air
 
 # Spawns interactive parts
-function minigames:whack_a_frog/mashine_parts/interactive
+function minigames:whack_a_frog/machine_parts/interactive
