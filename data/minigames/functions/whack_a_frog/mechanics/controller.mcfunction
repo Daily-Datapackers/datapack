@@ -1,6 +1,6 @@
 
 # Keeps the player near the mashine as long as the minigame is active to prevent breaking stuff
-execute positioned ^ ^ ^2 unless @p[tag=whack_a_frog.playing,distance=..2] align y run tp @p[tag=whack_a_frog.playing] ~ ~ ~
+execute positioned ^ ^ ^2 unless entity @p[tag=whack_a_frog.playing,distance=..2] align y run tp @p[tag=whack_a_frog.playing] ~ ~ ~
 
 # Decreases the subtimer and the timer (if subtimer is 0) of the controller
 scoreboard players remove @s timer1 1
