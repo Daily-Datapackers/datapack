@@ -1,5 +1,6 @@
 
 advancement revoke @s only minigames:activate_whack_a_frog
+gamemode adventure
 
 # Marks the player who plays on this mashine if in reach
 execute if entity @e[type=armor_stand,tag=whack_a_frog,distance=..3] run tag @s add whack_a_frog.playing
