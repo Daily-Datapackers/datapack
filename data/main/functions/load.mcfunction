@@ -7,4 +7,3 @@ scoreboard objectives add hub.rejoin minecraft.custom:leave_game
 
 # A scoreboard only for scores that aren't needed anymore in the following tick
 scoreboard objectives add temp dummy
-
