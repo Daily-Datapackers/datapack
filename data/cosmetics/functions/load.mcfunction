@@ -7,7 +7,7 @@ scoreboard objectives add c.equipped_cosmetic dummy
 scoreboard objectives add c.id dummy
 
 # Cosmetics timer
-scoreboard objectives add c.timer1
+scoreboard objectives add c.timer1 dummy
 
 # Used to store stuff that doesn't need to be stored individually in entities in %fakeplayers
 scoreboard objectives add c.cosmetics dummy
