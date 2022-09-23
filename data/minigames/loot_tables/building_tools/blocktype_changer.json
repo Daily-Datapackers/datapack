@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:dead_tube_coral_fan",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Blocktype Changer\",\"color\":\"light_blue\",\"italic\":false}'},Enchantments:[{}],tags:[\"blocktype_changer\"]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

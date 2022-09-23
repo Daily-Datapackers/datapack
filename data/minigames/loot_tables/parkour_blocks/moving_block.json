@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ghast_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Moving Block\",\"italic\":false}'},tags:\"moving_block\",Enchantments:[{}],EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"moving_block\",\"new\"]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
