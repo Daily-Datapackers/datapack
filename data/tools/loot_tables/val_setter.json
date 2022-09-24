@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:dead_tube_coral_fan",
+                    "name": "minecraft:shield",
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Blocktype Changer\",\"color\":\"aqua\",\"italic\":false}'},Enchantments:[{}],tags:[\"blocktype_changer\"]}"
+                            "tag": "{display:{Name:'{\"text\":\"Val Setter\",\"color\":\"aqua\",\"italic\":false}'},Enchantments:[{}],tags:[\"val_setter\"],Setting:1}"
                         }
                     ]
                 }

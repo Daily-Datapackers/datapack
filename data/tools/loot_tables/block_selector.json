@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Block Selector\",\"color\":\"light_blue\",\"italic\":false}'},Enchantments:[{}],tags:[\"block_selector\"]}"
+                            "tag": "{display:{Name:'{\"text\":\"Block Selector\",\"color\":\"aqua\",\"italic\":false}'},Enchantments:[{}],tags:[\"block_selector\"]}"
                         }
                     ]
                 }
