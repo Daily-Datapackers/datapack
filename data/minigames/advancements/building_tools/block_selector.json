@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:shield"
+                    ],
+                    "nbt": "{tags:[\"block_selector\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minigames:parkour/building_tools/block_selector/check"
+    }
+}

@@ -1,4 +1,6 @@
 
+execute align xyz run kill @e[type=marker,tag=parkour,tag=!new,dx=0]
+
 tag @s remove new
 
 scoreboard players add %Server parkour.block_id 1
