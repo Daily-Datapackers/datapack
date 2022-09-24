@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "minigames:parkour/building_tools/block_selector/check"
+        "function": "tools:parkour/block_selector/check"
     }
 }

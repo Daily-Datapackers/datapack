@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "minigames:parkour/building_tools/blocktype_changer/check"
+        "function": "tools:parkour/blocktype_changer/check"
     }
 }
