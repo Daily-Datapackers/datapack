@@ -1,7 +1,7 @@
 # ⚠️ DON'T MODIFY OR YOU MIGHT BREAK STUFF ⚠️
 
 # Adds the "selected" tag ._.
-tag @s add selected 
+tag @s add this 
 
 # Sets %compare's c.id score to the same as the cosmetic entites c.id score
 scoreboard players operation %compare c.id = @s c.id
@@ -16,4 +16,4 @@ execute as @a if score %compare c.id = @s player.id at @s run function cosmetics
 execute if score %kill c.id matches 1 at @s run function cosmetics:kill
 
 # Removes the "selected" tag ._.
-tag @s remove selected 
+tag @s remove this 

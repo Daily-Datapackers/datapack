@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:dead_tube_coral_fan"
+                    ],
+                    "nbt": "{tags:[\"blocktype_changer\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tools:parkour/blocktype_changer/check"
+    }
+}

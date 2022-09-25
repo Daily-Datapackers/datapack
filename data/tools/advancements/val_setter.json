@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:shield"
+                    ],
+                    "nbt": "{tags:[\"val_setter\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tools:parkour/val_setter/action_check"
+    }
+}

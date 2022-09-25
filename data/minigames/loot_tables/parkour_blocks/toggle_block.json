@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ghast_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Toggle Block\",\"italic\":false}'},tags:\"toggle_block\",CustomModelData:1,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"toggle_block\",\"new\"],data:{BlockType:\"minecraft:dirt\"}}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
