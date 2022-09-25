@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:shield"
+                    ],
+                    "nbt": "{tags:[\"info_getter\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tools:parkour/info_getter/get"
+    }
+}

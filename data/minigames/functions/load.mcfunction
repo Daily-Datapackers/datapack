@@ -17,4 +17,5 @@ scoreboard objectives add parkour.active dummy
 scoreboard objectives add parkour.toggle dummy
 
 # Remove forgotten and unused markers
+execute as @e[type=marker,tag=parkour] at @s if block ~ ~ ~ air run schedule clear tools:parkour/selection_particles
 execute as @e[type=marker,tag=parkour] at @s if block ~ ~ ~ air run kill

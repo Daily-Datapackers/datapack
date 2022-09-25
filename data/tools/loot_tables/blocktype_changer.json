@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Blocktype Changer\",\"color\":\"aqua\",\"italic\":false}'},Enchantments:[{}],tags:[\"blocktype_changer\"]}"
+                            "tag": "{display:{Name:'{\"text\":\"Blocktype Changer\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"blocktype_changer\"],CustomModelData:1}"
                         }
                     ]
                 }
