@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Snake Block\",\"italic\":false}'},tags:\"snake_block\",CustomModelData:2,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"snake_block\",\"new\"],data:{BlockType:\"minecraft:dirt\"}}}"
+                            "tag": "{display:{Name:'{\"text\":\"Snake Block\",\"italic\":false}'},tags:\"snake_block\",CustomModelData:2,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"snake_block\",\"new\"],data:{BlockType:[\"minecraft:dirt\",\"null\"],TimerStart:0,TimerDuration:0,Home:[0.0d,0.0d,0.0d]}}}"
                         }
                     ]
                 }
