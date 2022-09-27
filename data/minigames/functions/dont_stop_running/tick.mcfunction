@@ -1,0 +1,1 @@
+execute as @a[tag=dont_stop_running.running] run function minigames:dont_stop_running/main
