@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:light",
+                "state": {
+                    "level": "1"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minigames:parkour/special_blocks/trigger_block/revoke_trigger_setup"
+    }
+}

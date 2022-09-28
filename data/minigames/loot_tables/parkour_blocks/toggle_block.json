@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Toggle Block\",\"italic\":false}'},tags:\"toggle_block\",CustomModelData:1,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"toggle_block\",\"new\"],data:{BlockType:[\"minecraft:dirt\",\"null\"],TimerStart:0,TimerDuration:0}}}"
+                            "tag": "{display:{Name:'{\"text\":\"Toggle Block\",\"italic\":false}'},tags:\"toggle_block\",CustomModelData:1,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"toggle_block\",\"new\"],data:{BlockType:[\"minecraft:dirt\",\"null\"],TimerStart:0}}}"
                         }
                     ]
                 }

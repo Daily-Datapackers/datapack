@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:ghast_spawn_egg",
+                    "name": "minecraft:shield",
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Snake Block\",\"italic\":false}'},tags:\"snake_block\",CustomModelData:2,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"snake_block\",\"new\"],data:{BlockType:[\"minecraft:dirt\",\"null\"],TimerStart:0,Home:[0.0d,0.0d,0.0d]}}}"
+                            "tag": "{display:{Name:'{\"text\":\"Linking Tool\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"linking_tool\"],CustomModelData:5}"
                         }
                     ]
                 }
