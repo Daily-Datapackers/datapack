@@ -1,4 +1,6 @@
 
+tag @s add home_coords_set
+
 execute store result score temp temp run data get entity @s Pos[0] 10
 execute store result entity @s data.Home[0] double 0.1 run scoreboard players get temp temp
 
