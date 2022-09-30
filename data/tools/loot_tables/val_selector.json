@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Val Selector\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"val_selector\"],CustomModelData:4}"
+                            "tag": "{display:{Name:'{\"text\":\"Val Selector\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"val_selector\",\"builder_tool\"],CustomModelData:4}"
                         }
                     ]
                 }

@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Linking Tool\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"linking_tool\"],CustomModelData:5}"
+                            "tag": "{display:{Name:'{\"text\":\"Linking Tool\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"linking_tool\",\"builder_tool\"],CustomModelData:5}"
                         }
                     ]
                 }

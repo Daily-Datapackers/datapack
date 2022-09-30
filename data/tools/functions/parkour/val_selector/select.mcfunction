@@ -1,6 +1,4 @@
 
-advancement revoke @s only tools:val_selector
-
 execute store result score temp temp run data get entity @s Rotation[1]
 scoreboard players operation %val settings += temp temp
 

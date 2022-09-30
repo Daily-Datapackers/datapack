@@ -1,6 +1,4 @@
 
-advancement revoke @s only tools:linking_tool
-
 scoreboard players operation temp temp = @e[type=marker,tag=parkour,tag=!trigger_block,tag=!no_select,distance=..3,limit=1,sort=nearest] parkour.block_id
 execute at @e[type=marker,tag=parkour,tag=!trigger_block,tag=!no_select,distance=..3,limit=1,sort=nearest] run particle reverse_portal ~ ~1.2 ~ 0 0 0 1 50
 
