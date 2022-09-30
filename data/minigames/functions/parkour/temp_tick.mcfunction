@@ -5,6 +5,7 @@
 execute as @e[type=marker,tag=parkour,tag=toggle_block,scores={parkour.active=1}] at @s run function minigames:parkour/special_blocks/toggle_block/mechanics/controller
 execute as @e[type=marker,tag=parkour,tag=snake_block,scores={parkour.active=1}] at @s run function minigames:parkour/special_blocks/snake_block/mechanics/controller
 execute as @e[type=marker,tag=parkour,tag=trigger_block,scores={parkour.active=1}] run function minigames:parkour/special_blocks/trigger_block/mechanics/controller
+execute as @e[type=marker,tag=parkour,tag=fan_block,scores={parkour.active=1}] at @s run function minigames:parkour/special_blocks/fan_block/mechanics/controller
 
 execute as @e[type=marker,tag=parkour,scores={parkour.active=1,minigames.timer2=1..}] if score @s minigames.timer1 >= @s minigames.timer2 run scoreboard players set @s minigames.timer1 0
 
