@@ -1,0 +1,9 @@
+particle minecraft:dust 1 0 0 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 0.984 1 0 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 0.2 1 0 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 0 0.882 1 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 0.149 0 1 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 1 0 0.831 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 1 0.6 0 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 0.635 0 1 2 ~ ~ ~ 0.3 0.7 0.3 1 1
+particle minecraft:dust 1 0 0.502 2 ~ ~ ~ 0.3 0.7 0.3 1 1

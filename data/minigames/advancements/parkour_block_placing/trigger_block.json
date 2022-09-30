@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:ghast_spawn_egg"
+                    ],
+                    "nbt": "{tags:\"trigger_block\"}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minigames:parkour/special_blocks/trigger_block/revoke"
+    }
+}

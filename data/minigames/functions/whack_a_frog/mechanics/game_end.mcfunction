@@ -12,4 +12,4 @@ tp @e[type=frog,tag=whack_a_frog,distance=..2] ~ -500 ~
 function minigames:codelib/get_facing_dir
 
 # Spawn new interactive parts
-function minigames:whack_a_frog/mashine_parts/interactive
+function minigames:whack_a_frog/machine_parts/interactive

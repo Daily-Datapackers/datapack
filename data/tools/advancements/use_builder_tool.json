@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"builder_tool_delay\"]}"
+                            }
+                        }
+                    }
+                ],
+                "item": {
+                    "items": [
+                        "minecraft:shield"
+                    ],
+                    "nbt": "{tags:[\"builder_tool\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tools:parkour/tool_check"
+    }
+}
