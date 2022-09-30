@@ -1,4 +1,5 @@
 # TODO: Comment this code
+# Agreed - Cbble_
 
 scoreboard players reset @s hub.rejoin
 advancement revoke @s only cosmetics:rejoin

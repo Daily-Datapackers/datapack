@@ -1,3 +1,5 @@
+# TODO: Comment this code
+
 particle minecraft:end_rod ~ ~ ~ 0.5 15 0.5 0.01 3 force
 execute if block ~ ~ ~ minecraft:light_weighted_pressure_plate[ power= 1 ] as @a[distance=..1,tag=!activated] at @s run spawnpoint @s ~ ~ ~ ~
 execute if block ~ ~ ~ minecraft:light_weighted_pressure_plate[ power= 1 ] as @a[distance=..1,tag=!activated] run title @s actionbar {"text":"-!- Checkpoint Set -!-","color":"gold"}

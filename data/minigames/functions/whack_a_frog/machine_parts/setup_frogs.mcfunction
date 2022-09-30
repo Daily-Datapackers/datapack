@@ -1,9 +1,9 @@
 
-# Gives ids to the frogs (not glabal)
+# Gives ids to the frogs (not global)
 scoreboard players add temp whack_a_frog.id 1
 scoreboard players operation @s whack_a_frog.id = temp whack_a_frog.id
 
-# Resets the scoreboard for the next mashine
+# Resets the scoreboard for the next machine
 execute if score temp whack_a_frog.id matches 9.. run scoreboard players reset temp whack_a_frog.id
 
 # Sets the frogs timer to 0

@@ -2,7 +2,7 @@
 # Remove activated button
 tp @e[type=villager,tag=whack_a_frog,tag=start_button,limit=1,sort=nearest] ~ ~-500 ~
 
-# Marks the activated mashine
+# Marks the activated machine
 tag @s add whack_a_frog.playing
 
 # Sets play time to 1 min.
