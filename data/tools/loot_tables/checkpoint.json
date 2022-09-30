@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bee_spawn_egg",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Checkpoint Spawn Egg\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['[{\"text\":\"A magical golden plate with power of \",\"color\":\"yellow\",\"italic\":true},{\"text\":\"checking points\",\"color\":\"yellow\",\"italic\":true,\"strikethrough\":true},{\"text\":\" setting spawnpoints\",\"color\":\"yellow\",\"italic\":true}]']},EntityTag:{id:\"minecraft:marker\",CustomNameVisible:1b,Tags:[\"spawn_checkpoint\"],CustomName:'{\"text\":\"Checkpoint\",\"color\":\"gold\",\"bold\":true,\"italic\":false}'},CustomModelData:1}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
