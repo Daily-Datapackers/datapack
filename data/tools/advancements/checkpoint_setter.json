@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:shield"
+                    ],
+                    "nbt": "{tags:[\"checkpoint_setter\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tools:dont_stop_running/checkpoint_setter/main"
+    }
+}
