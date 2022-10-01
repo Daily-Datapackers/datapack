@@ -15,11 +15,12 @@ scoreboard objectives add parkour.id dummy
 # Id for the special blocks
 scoreboard objectives add parkour.block_id dummy
 
+# Activation state of a block
 scoreboard objectives add parkour.active dummy
 scoreboard objectives add parkour.toggle dummy
 
 # Remove forgotten and unused markers
-execute as @e[type=marker,tag=parkour] at @s if block ~ ~ ~ air run function minigames:parkour/remove_unused_blocks
+execute as @e[type=marker,tag=parkour] at @s if block ~ ~ ~ air run function minigames:parkour/remove_unused_marker
 
 ### For Dont Stop Running
 gamerule doImmediateRespawn true
