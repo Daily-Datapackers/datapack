@@ -1,18 +1,19 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:using_item",
-            "conditions": {
-                "item": {
-                    "items": [
-                        "minecraft:shield"
-                    ],
-                    "nbt": "{tags:[\"checkpoint_setter\"]}"
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Checkpoint Setter\",\"color\":\"gold\",\"italic\":false}'},tags:[\"checkpoint_setter\"],CustomModelData:6}"
+                        }
+                    ]
                 }
-            }
+            ]
         }
-    },
-    "rewards": {
-        "function": "tools:dont_stop_running/checkpoint_setter/main"
-    }
+    ]
 }
