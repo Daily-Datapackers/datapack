@@ -1,4 +1,5 @@
 
+# Gets all the important information and settings of a selected block and dispalys it to the player
 tellraw @s {"text":"===---","color":"blue"}
 tellraw @s [{"text":"Is part of parkour: ","color":"gray"},{"score":{"name":"@e[type=marker,tag=parkour,tag=selected,tag=!multi,limit=1,sort=nearest]","objective":"parkour.id"},"color":"green"}]
 tellraw @s [{"text":"Block id: ","color":"gray"},{"score":{"name":"@e[type=marker,tag=parkour,tag=selected,tag=!multi,limit=1,sort=nearest]","objective":"parkour.block_id"},"color":"green"}]

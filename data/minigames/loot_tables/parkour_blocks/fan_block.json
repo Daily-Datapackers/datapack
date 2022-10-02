@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ghast_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Fan Block\",\"italic\":false}'},tags:\"fan_block\",CustomModelData:4,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"fan_block\",\"new\"]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

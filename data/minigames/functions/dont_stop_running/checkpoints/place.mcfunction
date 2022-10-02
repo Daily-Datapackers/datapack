@@ -1,7 +1,10 @@
-# Dear diamond, please comment your code
-# Sincerely, Datapark Devs
 
-execute unless block ~ ~ ~ minecraft:light_weighted_pressure_plate run setblock ~ ~ ~ minecraft:light_weighted_pressure_plate
-execute unless block ~ ~-1 ~ minecraft:beacon run setblock ~ ~-1 ~ minecraft:beacon
+## This function triggers when you click with the checkpoint spawn egg
+
+#Places blocks
+setblock ~ ~ ~ minecraft:light_weighted_pressure_plate
+setblock ~ ~-1 ~ minecraft:beacon
+
+# Add/remove itself tags
 tag @s add checkpoint
 tag @s remove spawn_checkpoint
