@@ -1,3 +1,4 @@
+
 ## This function triggers when you click with the checkpoint spawn egg
 
 #Places blocks

@@ -1,11 +1,11 @@
 
-# Revomes one from the frogs timer
+# Removes one from the frogs timer
 scoreboard players remove @s minigames.timer1 1
 
 # Blocks this frog from giving more than one point
 execute if entity @s[nbt={HurtTime:8s}] run tag @s add hit
 
-# Controlls the up and down motion
+# Controls the up and down motion
 execute if score @s minigames.timer1 > @s minigames.timer2 run tp @s ~ ~.1 ~
 execute if score @s minigames.timer1 < @s minigames.timer2 run tp @s ~ ~-.1 ~
 

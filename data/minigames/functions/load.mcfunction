@@ -8,11 +8,11 @@ scoreboard objectives add minigames.timer4 dummy
 ### For Whack a Frog
 scoreboard objectives add whack_a_frog.id dummy
 
-### For Pakour
-# Id for the different parkours
+### For Parkour
+# ID for the different parkour
 scoreboard objectives add parkour.id dummy
 
-# Id for the special blocks
+# ID for the special blocks
 scoreboard objectives add parkour.block_id dummy
 
 # Activation state of a block
@@ -22,5 +22,5 @@ scoreboard objectives add parkour.toggle dummy
 # Remove forgotten and unused markers
 execute as @e[type=marker,tag=parkour] at @s if block ~ ~ ~ air run function minigames:parkour/remove_unused_marker
 
-### For Dont Stop Running
+### For Don't Stop Running
 gamerule doImmediateRespawn true

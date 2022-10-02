@@ -1,3 +1,4 @@
+
 ## Triggers when there are checkpoints in the world
 
 # Does end rod beam particles
