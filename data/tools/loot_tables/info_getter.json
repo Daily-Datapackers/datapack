@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Info Getter\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"info_getter\"],CustomModelData:3}"
+                            "tag": "{display:{Name:'{\"text\":\"Info Getter\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"info_getter\",\"builder_tool\"],CustomModelData:3}"
                         }
                     ]
                 }

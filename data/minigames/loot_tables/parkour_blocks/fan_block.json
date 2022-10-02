@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:shield",
+                    "name": "minecraft:ghast_spawn_egg",
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Linking Tool\",\"color\":\"aqua\",\"italic\":false}'},tags:[\"linking_tool\",\"builder_tool\"],CustomModelData:5}"
+                            "tag": "{display:{Name:'{\"text\":\"Fan Block\",\"italic\":false}'},tags:\"fan_block\",CustomModelData:4,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"fan_block\",\"new\"]}}"
                         }
                     ]
                 }
