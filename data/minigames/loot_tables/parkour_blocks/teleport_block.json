@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ghast_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Teleport Block\",\"italic\":false}'},tags:\"teleport_block\",CustomModelData:5,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"teleport_block\",\"new\"]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

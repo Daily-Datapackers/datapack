@@ -6,13 +6,12 @@
                 "item": {
                     "items": [
                         "minecraft:ghast_spawn_egg"
-                    ],
-                    "nbt": "{tags:\"snake_block\"}"
+                    ]
                 }
             }
         }
     },
     "rewards": {
-        "function": "minigames:parkour/special_blocks/snake_block/revoke"
+        "function": "minigames:parkour/placing_blocks"
     }
 }

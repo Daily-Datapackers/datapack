@@ -10,8 +10,9 @@ execute if score @s parkour.active matches 1 run particle dust 0 1 0 1 ~ ~1.2 ~ 
 # Sets its timer start to the one saved in its nbt
 execute if score @s parkour.active matches 1 store result score @s minigames.timer1 run data get entity @s data.TimerStart
 
-# If a trigger block has the toggle score 1 it sets it back to 0
-execute if entity @s[tag=parkour,tag=triger_block_block] if score @s parkour.active matches 1 run scoreboard players set @s parkour.toggle 0
+# If a block has the toggle score 1 it sets it back to 0
+execute if entity @s[tag=parkour,tag=trigger_block] if score @s parkour.active matches 1 run scoreboard players set @s parkour.toggle 0
+execute if entity @s[tag=parkour,tag=teleport_block] if score @s parkour.active matches 1 run scoreboard players set @s parkour.toggle 0
 
 # Saves the home position of a snake block if it isn't already
 execute if entity @s[tag=parkour,tag=snake_block,tag=!home_coords_set] if score @s parkour.active matches 1 run function minigames:parkour/special_blocks/snake_block/store_home_coords
