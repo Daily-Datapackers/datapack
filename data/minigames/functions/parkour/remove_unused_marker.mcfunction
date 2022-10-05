@@ -1,4 +1,3 @@
 
 # File name (Only parkour marker)
-schedule clear tools:parkour/block_selector/selection_particles
-kill
+execute as @e[type=marker,tag=parkour] at @s if block ~ ~ ~ air run kill
