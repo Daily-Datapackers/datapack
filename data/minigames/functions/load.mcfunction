@@ -20,7 +20,10 @@ scoreboard objectives add parkour.active dummy
 scoreboard objectives add parkour.toggle dummy
 
 # Remove forgotten and unused markers
-execute as @e[type=marker,tag=parkour] at @s if block ~ ~ ~ air run function minigames:parkour/remove_unused_marker
+function minigames:parkour/remove_unused_marker
+
+# Deselect all selected parkour blocks
+schedule clear tools:parkour/block_selector/selection_particles
 
 ### For Don't Stop Running
 gamerule doImmediateRespawn true

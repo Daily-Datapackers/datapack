@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "stepping_on": {
+                        "block": {
+                            "blocks": [
+                                "minecraft:note_block"
+                            ],
+                            "state": {
+                                "instrument": "harp",
+                                "powered": false,
+                                "note": 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minigames:parkour/special_blocks/death_block/mechanics/kill"
+    }
+}
