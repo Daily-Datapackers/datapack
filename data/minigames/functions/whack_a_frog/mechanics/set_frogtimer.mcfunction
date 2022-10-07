@@ -3,7 +3,7 @@
 scoreboard players set @s minigames.timer1 16
 
 # Adds 1 to 9 ticks to the timer (for more random)
-rand 1 9 rng temp
+execute store result score rng temp run rand 1 9
 scoreboard players operation @s minigames.timer1 += rng temp
 
 # Sets timer for up and down motion
