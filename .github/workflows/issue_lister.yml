@@ -16,6 +16,6 @@ jobs:
           # You can target a repository in a different organization
           # to the issue
           project-url: https://github.com/orgs/Daily-Datapackers/projects/6
-          github-token: ${{ secrets.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 }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           labeled: bug, gamebreaking-bug
           label-operator: OR
