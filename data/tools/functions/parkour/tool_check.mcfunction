@@ -15,5 +15,7 @@ execute if predicate tools:tool_usage/val_selector run function tools:parkour/va
 
 execute if predicate tools:tool_usage/val_setter run function tools:parkour/val_setter/action_check
 
+execute if predicate tools:tool_usage/checkpoint_setter run function tools:dont_stop_running/checkpoint_setter/main
+
 # Removes the delay tag after 3 tick
 schedule function tools:parkour/end_delay 3t replace
