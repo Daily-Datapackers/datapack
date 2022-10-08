@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Checkpoint Setter\",\"color\":\"gold\",\"italic\":false}'},tags:[\"checkpoint_setter\"],CustomModelData:6}"
+                            "tag": "{display:{Name:'{\"text\":\"Checkpoint Setter\",\"color\":\"gold\",\"italic\":false}'},tags:[\"checkpoint_setter\",\"builder_tool\"],CustomModelData:6}"
                         }
                     ]
                 }
