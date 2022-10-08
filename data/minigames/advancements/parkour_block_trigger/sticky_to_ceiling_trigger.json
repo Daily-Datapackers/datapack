@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:cave_vines",
+                "state": {
+                    "age": "0",
+                    "berries": "false"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minigames:parkour/special_blocks/ceiling_block/sticky/mechanics/sticky"
+    }
+}

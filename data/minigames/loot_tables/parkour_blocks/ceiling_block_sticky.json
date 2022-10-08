@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\":\"Trigger Block\",\"italic\":false}'},tags:\"trigger_block\",CustomModelData:3,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"trigger_block\",\"new\"],data:{TimerStart:0}}}"
+                            "tag": "{display:{Name:'[{\"text\":\"Ceiling Block (\",\"italic\":false},{\"text\":\"Sticky\",\"color\":\"gold\"},{\"text\":\")\"}]'},tags:\"ceiling_block_sticky\",CustomModelData:7,EntityTag:{id:\"minecraft:marker\",Tags:[\"parkour\",\"ceiling_block_sticky\",\"new\"]}}"
                         }
                     ]
                 }

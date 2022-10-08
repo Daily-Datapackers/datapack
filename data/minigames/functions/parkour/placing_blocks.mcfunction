@@ -13,3 +13,7 @@ execute if predicate minigames:special_block_placing/trigger_block run function 
 execute if predicate minigames:special_block_placing/teleport_block run function minigames:parkour/special_blocks/teleport_block/revoke
 
 execute if predicate minigames:special_block_placing/death_block run function minigames:parkour/special_blocks/death_block/revoke
+
+execute if predicate minigames:special_block_placing/ceiling_block_sticky run function minigames:parkour/special_blocks/ceiling_block/sticky/revoke
+
+execute if predicate minigames:special_block_placing/ceiling_block_release run function minigames:parkour/special_blocks/ceiling_block/release/revoke

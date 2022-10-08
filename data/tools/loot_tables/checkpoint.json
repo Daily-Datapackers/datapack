@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Checkpoint Spawn Egg\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['[{\"text\":\"A magical golden plate with power of \",\"color\":\"yellow\",\"italic\":true},{\"text\":\"checking points\",\"color\":\"yellow\",\"italic\":true,\"strikethrough\":true},{\"text\":\" setting spawnpoints\",\"color\":\"yellow\",\"italic\":true}]']},EntityTag:{id:\"minecraft:marker\",CustomNameVisible:1b,Tags:[\"spawn_checkpoint\"],CustomName:'{\"text\":\"Checkpoint\",\"color\":\"gold\",\"bold\":true,\"italic\":false}'},CustomModelData:1}"
+                "tag": "{display:{Name:'{\"text\":\"Checkpoint Spawn Egg\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"A magical golden plate\",\"color\":\"yellow\",\"italic\":true}','{\"text\":\"with the power of\",\"color\":\"yellow\",\"italic\":true}','{\"text\":\"checking points\",\"color\":\"yellow\",\"italic\":true,\"strikethrough\":true}','{\"text\":\"setting spawnpoints\",\"color\":\"yellow\",\"italic\":true}']},EntityTag:{id:\"minecraft:marker\",CustomNameVisible:1b,Tags:[\"spawn_checkpoint\"],CustomName:'{\"text\":\"Checkpoint\",\"color\":\"gold\",\"bold\":true,\"italic\":false}'},CustomModelData:1}"
               }
             ]
           }
