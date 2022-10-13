@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Finish Spawn Egg\",\"color\":\"white\",\"bold\":true,\"italic\":false}',Lore:['[{\"text\":\"A magical thingy, that let you remove the curse of running \",\"color\":\"yellow\",\"italic\":true}]']},EntityTag:{id:\"minecraft:armor_stand\",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:\"minecraft:stick\",Count:1b,tag:{CustomModelData:1002}}],Tags:[\"spawn_finish\"],CustomName:'{\"text\":\"inish\",\"color\":\"white\",\"bold\":true,\"italic\":false}'},CustomModelData:9}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
