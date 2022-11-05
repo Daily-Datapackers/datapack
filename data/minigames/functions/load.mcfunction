@@ -4,6 +4,7 @@ scoreboard objectives add minigames.timer1 dummy
 scoreboard objectives add minigames.timer2 dummy
 scoreboard objectives add minigames.timer3 dummy
 scoreboard objectives add minigames.timer4 dummy
+scoreboard objectives add minigames.timer5 dummy
 
 ### For Whack a Frog
 scoreboard objectives add whack_a_frog.id dummy
