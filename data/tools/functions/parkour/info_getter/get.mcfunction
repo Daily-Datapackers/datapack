@@ -12,4 +12,5 @@ tellraw @s [{"text":"Timer 1: ","color":"gray"},{"nbt":"data.TimerStart","entity
 tellraw @s [{"text":"Timer 2: ","color":"gray"},{"score":{"name":"@e[type=marker,tag=parkour,tag=selected,tag=!multi,limit=1,sort=nearest]","objective":"minigames.timer2"},"color":"green"}]
 tellraw @s [{"text":"Timer 3: ","color":"gray"},{"score":{"name":"@e[type=marker,tag=parkour,tag=selected,tag=!multi,limit=1,sort=nearest]","objective":"minigames.timer3"},"color":"green"}]
 tellraw @s [{"text":"Timer 4: ","color":"gray"},{"score":{"name":"@e[type=marker,tag=parkour,tag=selected,tag=!multi,limit=1,sort=nearest]","objective":"minigames.timer4"},"color":"green"}]
+tellraw @s [{"text":"Timer 5: ","color":"gray"},{"score":{"name":"@e[type=marker,tag=parkour,tag=selected,tag=!multi,limit=1,sort=nearest]","objective":"minigames.timer5"},"color":"green"}]
 tellraw @s {"text":"===---","color":"blue"}
