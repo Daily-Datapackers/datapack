@@ -8,7 +8,7 @@ execute as @e[type=marker,tag=parkour,tag=trigger_block,scores={parkour.active=1
 execute as @e[type=marker,tag=parkour,tag=fan_block,scores={parkour.active=1}] at @s run function minigames:parkour/special_blocks/fan_block/mechanics/controller
 
 # Resets a blocks timer
-execute as @e[type=marker,tag=parkour,scores={parkour.active=1,minigames.timer2=1..}] if score @s minigames.timer1 >= @s minigames.timer2 run scoreboard players set @s minigames.timer1 0
+execute as @e[type=marker,tag=parkour,scores={parkour.active=1,minigames.timer2=1..}] if score @s minigames.timer1 > @s minigames.timer2 run scoreboard players set @s minigames.timer1 0
 
 # Runs the timer for parkour blocks
 execute as @e[type=marker,tag=parkour,scores={parkour.active=1,minigames.timer2=1..}] run scoreboard players add @s minigames.timer1 1
