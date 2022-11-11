@@ -11,3 +11,5 @@ execute if data entity @s SelectedItem.tag{Setting:4} as @e[type=marker,tag=park
 execute if data entity @s SelectedItem.tag{Setting:5} as @e[type=marker,tag=parkour,tag=selected] at @s run function tools:parkour/val_setter/actions/set_timer_3
 
 execute if data entity @s SelectedItem.tag{Setting:6} as @e[type=marker,tag=parkour,tag=selected] at @s run function tools:parkour/val_setter/actions/set_timer_4
+
+execute if data entity @s SelectedItem.tag{Setting:7} as @e[type=marker,tag=parkour,tag=selected] at @s run function tools:parkour/val_setter/actions/set_timer_5
