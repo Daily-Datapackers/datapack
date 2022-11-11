@@ -28,7 +28,7 @@ execute if score temp temp matches 6 run tellraw @s {"text":"=-\nTimer 4 Setter\
 execute if score temp temp matches 7 run tellraw @s {"text":"=-\nTimer 5 Setter\n=-","color":"aqua"}
 
 # Replaces the tool in your hand with the one with the updated settings from the item frame
-item replace entity @s weapon from entity @e[type=item_frame,tag=setting_cycler,limit=1,sort=nearest] container.0
+item replace entity @s weapon.mainhand from entity @e[type=item_frame,tag=setting_cycler,limit=1,sort=nearest] container.0
 
 # Removes the item frame
 kill @e[type=item_frame,tag=setting_cycler,limit=1,sort=nearest]
